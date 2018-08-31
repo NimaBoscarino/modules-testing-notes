@@ -1,4 +1,6 @@
 # Week 1 Day 5 - Modules and Testing
+REPO: https://github.com/NimaBoscarino/modules-testing-notes
+
 I recommend reading into [Sindre Sorhus](https://sindresorhus.com/), the reigning monarch of Open Source module development.
 
 Useful links:
