@@ -3,10 +3,14 @@ REPO: https://github.com/NimaBoscarino/modules-testing-notes
 
 I recommend reading into [Sindre Sorhus](https://sindresorhus.com/), the reigning monarch of Open Source module development.
 
-Useful links:
-1. [npm - the package registry](https://www.npmjs.com)  
+## Useful links:
+
+1. [npm - the package registry](https://www.npmjs.com)
+1. [package.json - Documentation](https://docs.npmjs.com/files/package.json)
 2. [Sindre Sorhus - Why make modules??](https://github.com/sindresorhus/ama/issues/10#issuecomment-117766328)
 3. [Sindre Sorhus AMA](https://blog.sindresorhus.com/answering-anything-678ce5623798)
+4. [Publish your own NPM modules!](https://medium.freecodecamp.org/how-to-create-and-publish-your-npm-package-node-module-in-just-10-minutes-b8ca3a100050)
+5. [left-pad: An NPM Story](https://www.theregister.co.uk/2016/03/23/npm_left_pad_chaos/)
 
 Let's start with a little bit of vocab...
 
@@ -16,6 +20,8 @@ API: Application Programming Interface
     - stuff: people maybe?
     - stuff: programs maybe?
 - allows you to talk to an already existing program and implement that stuff into YOUR code
+
+Check out `API_sketch.png` in the repo to see a little diagram.
 
 ## Modularization
 The pattern with modularization will be...
@@ -73,7 +79,6 @@ As we use other people's code, we have to agree on certain things. For example, 
 # Cyclical Require
 Someone asked a neat question about having two modules requiring each other, so I put together a little demo of it. It works, it's just a little tricky to understand what's going on. I recommend playing around with `aJob.js` and `experience.js` in the `cyclicalRequire` folder. 
 
-
 # NPM: The Node Package Manager
 NPM is both the online registry of modules, and the command line tool that lets us manage the packages used by our projects (a.k.a. dependencies!).
 
@@ -93,6 +98,10 @@ When we install a package (module), we can use it in our project by going: `var 
 ## Testing
 
 We took a look at unit testing with Mocha. Mocha is a test runner that we can install as a **dev dependency**. We write test descriptions and assertions, and then use Mocha to check to see if all our tests pass! Check out the `hiphop` folder for examples of using Mocha for writing and using tests.
+
+## Extra things
+
+One of the questions that came up was "are the packages on the npm registry audited in any way?". The simple answer is "No!". We have to be a little careful about what packages we install. [Here's a funny story](https://www.theregister.co.uk/2016/03/23/npm_left_pad_chaos/) about what happens in the wild west of NPM-land
 
 To run the demos make sure that you run `npm install` to install all of the required modules!
 

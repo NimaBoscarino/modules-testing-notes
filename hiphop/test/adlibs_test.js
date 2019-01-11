@@ -8,7 +8,7 @@ describe('HipHop Adlibs', function() {
         assert.equal(adLibs("Mos Def"), "Bucka buck bucka bucka"); // good!
     });
     it('should say "Brrrttt-ah!" when the artist is Lady Leshurr', function() {
-        assert.equal(adLibs("Lady Leshurr"), "asdasdas-ah!"); // fails!
+        assert.equal(adLibs("Lady Leshurr"), "Brrrttt-ah!"); // fails!
     });
 });
 
